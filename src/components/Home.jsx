@@ -1,6 +1,7 @@
 import './Nav.css';
-import { AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineUser, AiOutlineVideoCameraAdd } from 'react-icons/ai';
 import { FaArrowRightLong } from 'react-icons/fa6';
+import { BiMessageAdd } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
                     <div className='grid p-2 rounded w-[100%]'>
                         <div className='flex'>
                             <div className='flex m-2  shadow-lg w-[14rem] p-4 cursor-pointer' onClick={()=>navigate('/sidenav')}>
-                                <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineUser className='text-white' /></div>
+                                <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><BiMessageAdd className='text-white' /></div>
                                 <div>
                                     <div className='px-2  font-semibold'> Chat with <br/>  AI </div>
                                     
@@ -22,8 +23,8 @@ const Home = () => {
                                 </div>
                                 <div className='m-auto'><FaArrowRightLong /></div>
                             </div>
-                            <div className='flex m-2 shadow-lg w-[14rem] p-4'>
-                            <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineUser className='text-white' /></div>
+                            <div className='flex m-2 shadow-lg w-[14rem] p-4 cursor-pointer' onClick={()=>navigate('/room/1')}>
+                                <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineVideoCameraAdd className='text-white' /></div>
                             <div>
                                 <div className='px-2  font-semibold'> Individual <br /> Counselling </div>
 
