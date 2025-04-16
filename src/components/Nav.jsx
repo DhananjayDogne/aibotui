@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Chat = () => {
     return (
         <div className="nav">
-            <Link to="/" className=' px-[4rem] font-bold text-3xl my-auto'>Smile Talk</Link>
+            <Link to="/" className=' px-[4rem] font-bold text-3xl my-auto'>SmileTalk</Link>
             
             <ul className='pl-8 flex justify-between w-[35%] my-auto'>
                 <li className='flex cursor-pointer'>Services <RiArrowDropDownLine  className='m-auto text-3xl '/></li>

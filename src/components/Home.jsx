@@ -4,6 +4,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import { BiMessageAdd } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
 
+
 const Home = () => {
     const navigate = useNavigate();
     return (
@@ -34,10 +35,10 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='flex'>
-                            <div className='flex m-2 shadow-lg w-[14rem] p-4'>
+                            <div className='flex m-2 shadow-lg w-[14rem] p-4 cursor-pointer' onClick={() => navigate('/snap')}>
                                 <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineUser className='text-white' /></div>
                                 <div>
-                                    <div className='px-2  font-semibold'> Individual <br /> Counselling </div>
+                                    <div className='px-2  font-semibold'> Snap  Me <br />  </div>
 
                                     <div className='px-2 text-sm'>For Myself</div>
                                 </div>
